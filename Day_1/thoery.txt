@@ -1,0 +1,48 @@
+Theory
+
+1 What is DSA?
+        Data Structures and Algorithms (DSA) are the core of computer science.
+        Data Structures organize and store data efficiently (like arrays, stacks, queues, trees).
+        Algorithms are step-by-step methods to solve problems (like searching, sorting, traversing).
+        DSA helps us write optimized and efficient code — crucial for real-world applications and interviews.
+
+2 How to Solve Problems in DSA
+        The general problem-solving process in DSA involves:
+        Understanding the problem (what is asked?)
+        Breaking down into smaller steps (subproblems)
+        Designing algorithm/pseudocode
+        Drawing flowchart (visual logic)
+        Coding the logic
+        Testing with sample inputs
+        Optimizing for time and space
+
+3 Flowchart Example
+
+Problem: Find the sum of two numbers
+
+     ┌──────────────┐
+     │     Start     │
+     └──────┬───────┘
+            ↓
+     ┌──────────────┐
+     │ Input A, B    │
+     └──────┬───────┘
+            ↓
+     ┌──────────────┐
+     │ Sum = A + B  │
+     └──────┬───────┘
+            ↓
+     ┌──────────────┐
+     │ Output Sum    │
+     └──────┬───────┘
+            ↓
+     ┌──────────────┐
+     │     End       │
+     └──────────────┘
+
+4 Pseudocode
+    Start
+        Input A, B
+        Sum ← A + B
+        Output Sum
+    Stop
