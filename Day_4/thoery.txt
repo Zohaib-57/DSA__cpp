@@ -1,0 +1,128 @@
+Day 4: Patterns in C++
+------------------------------------------------------
+Objective:
+To understand how nested loops are used to print different visual patterns (stars, numbers, characters, etc.)
+Patterns are a key part of logic-building in programming and help you think in terms of rows and columns.
+
+------------------------------------------------------
+What Are Patterns?
+------------------------------------------------------
+Pattern printing refers to displaying specific shapes or sequences (like triangles, pyramids, or diamonds)
+using loops and print statements. These are built mostly with nested loops in C++.
+
+------------------------------------------------------
+Basic Idea:
+------------------------------------------------------
+1. **Outer Loop:** Controls the number of rows.
+2. **Inner Loop(s):** Controls what is printed in each row (like stars, numbers, or spaces).
+3. **Conditions:** Used to decide whether to print a star, space, or number.
+4. **Newline:** After each row, we print a new line using `cout << endl;`
+
+------------------------------------------------------
+Tools / Syntax Reminder:
+------------------------------------------------------
+We use:
+    - `for` loops (mostly)
+    - `cout` for printing
+    - `endl` or "\n" for moving to the next line
+
+General structure:
+    for (int i = 1; i <= rows; i++) {
+        for (int j = 1; j <= columns; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+------------------------------------------------------
+How Patterns Work Step by Step:
+------------------------------------------------------
+1. Determine the total number of rows.
+2. For each row (outer loop):
+   - Decide what needs to be printed.
+   - Use inner loops to print stars, spaces, or numbers.
+3. Adjust spacing and alignment using conditions or inner loops.
+4. Move to a new line at the end of every row.
+
+------------------------------------------------------
+PATTERNS WE WILL STUDY:
+------------------------------------------------------
+
+1 **Right-Angled Triangle**
+   - Shape: 
+        *
+        **
+        ***
+        ****
+   - Concept: Number of stars increases with each row.
+
+2 **Reverse (Inverted) Triangle**
+   - Shape:
+        ****
+        ***
+        **
+        *
+   - Concept: Number of stars decreases with each row.
+
+3 **Floyd’s Triangle**
+   - Shape:
+        1
+        2 3
+        4 5 6
+        7 8 9 10
+   - Concept: Numbers increase consecutively row by row.
+   - Uses: Understanding counters within nested loops.
+
+4  **Inverted Right-Angled Triangle**
+   - Shape:
+           *
+          **
+         ***
+        ****
+   - Concept: Add leading spaces before stars to create right alignment.
+
+5 **Pyramid Pattern**
+   - Shape:
+           *
+          ***
+         *****
+        *******
+   - Concept: Combination of spaces and stars to form a symmetric shape.
+
+6 **Hollow Diamond Pattern**
+   - Shape:
+           *
+          * *
+         *   *
+          * *
+           *
+   - Concept: Use conditions to print stars only at the edges, spaces elsewhere.
+
+7 **Butterfly Pattern**
+   - Shape:
+        *      *
+        **    **
+        ***  ***
+        ********
+        ***  ***
+        **    **
+        *      *
+   - Concept: Two mirrored triangles (upper and lower) combined symmetrically.
+
+------------------------------------------------------
+Logical Thinking Behind Patterns:
+------------------------------------------------------
+- For increasing patterns, the count (stars or numbers) grows with each row.
+- For decreasing patterns, the count reduces with each row.
+- For centered or pyramid-like shapes, spaces are used strategically before and after stars.
+- For hollow shapes, conditions (like i==1, j==1, i==n, j==n) determine where to print stars.
+
+------------------------------------------------------
+Practice Questions:
+------------------------------------------------------
+1. Print a right-angled triangle using "*".
+2. Create a reverse triangle using "*".
+3. Generate Floyd’s triangle using numbers.
+4. Print a pyramid pattern.
+5. Create a hollow diamond shape.
+6. Make a butterfly pattern of "*".
